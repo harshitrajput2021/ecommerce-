@@ -1,0 +1,12 @@
+# Eclipse metadata
+.metadata/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+*.iml
+.idea/
