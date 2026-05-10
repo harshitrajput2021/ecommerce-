@@ -72,7 +72,7 @@ export default function CartPage() {
               {items.map((item) => (
                 <tr key={item.productId}>
                   <td>{item.productName}</td>
-                  <td>${Number(item.unitPrice).toFixed(2)}</td>
+                  <td>₹{Number(item.unitPrice).toFixed(2)}</td>
                   <td>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <button onClick={() => handleDecrement(item)} className="ghost-btn">-</button>
@@ -80,7 +80,7 @@ export default function CartPage() {
                       <button onClick={() => handleIncrement(item)} className="ghost-btn">+</button>
                     </div>
                   </td>
-                  <td>${Number(item.lineTotal).toFixed(2)}</td>
+                  <td>₹{Number(item.lineTotal).toFixed(2)}</td>
                   <td>
                     <button onClick={() => handleRemove(item)} className="ghost-btn danger">
                       Remove
@@ -94,7 +94,7 @@ export default function CartPage() {
 
           <div style={{ textAlign: 'right', margin: '1rem 0' }}>
             <p>Total Items: <strong>{cart.totalItems}</strong></p>
-            <p>Grand Total: <strong>${Number(cart.grandTotal).toFixed(2)}</strong></p>
+            <p>Grand Total: <strong>₹{Number(cart.grandTotal).toFixed(2)}</strong></p>
           </div>
 
           <div style={{ textAlign: 'right' }}>

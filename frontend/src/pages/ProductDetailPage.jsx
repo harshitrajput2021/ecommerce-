@@ -57,7 +57,7 @@ export default function ProductDetailPage() {
 
         <h1 className="page-title" style={{ fontSize: '2.1rem', marginTop: '1rem' }}>{product.name}</h1>
         <p className="muted">{product.category}</p>
-        <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>${Number(product.price).toFixed(2)}</p>
+        <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>₹{Number(product.price).toFixed(2)}</p>
         <p>{product.description}</p>
         <p>
           <strong>In stock:</strong> {product.stockQuantity}

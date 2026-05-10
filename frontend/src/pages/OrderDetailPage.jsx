@@ -50,8 +50,8 @@ export default function OrderDetailPage() {
             <tr key={idx}>
               <td>{item.productName}</td>
               <td>{item.quantity}</td>
-              <td>${Number(item.unitPrice).toFixed(2)}</td>
-              <td>${(item.quantity * item.unitPrice).toFixed(2)}</td>
+              <td>₹{Number(item.unitPrice).toFixed(2)}</td>
+              <td>₹{(item.quantity * item.unitPrice).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
@@ -59,7 +59,7 @@ export default function OrderDetailPage() {
       </div>
 
       <div style={{ textAlign: 'right' }}>
-        <strong>Total: ${Number(order.totalPrice).toFixed(2)}</strong>
+        <strong>Total: ₹{Number(order.totalPrice).toFixed(2)}</strong>
       </div>
     </div>
   );

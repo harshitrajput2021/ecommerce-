@@ -91,7 +91,7 @@ export default function CatalogPage() {
                 />
                 <h3>{product.name}</h3>
                 <p className="muted">{product.category}</p>
-                <p><strong>${Number(product.price).toFixed(2)}</strong></p>
+                <p><strong>₹{Number(product.price).toFixed(2)}</strong></p>
               </div>
             ))
           )}

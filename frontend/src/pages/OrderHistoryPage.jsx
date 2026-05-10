@@ -54,7 +54,7 @@ export default function OrderHistoryPage() {
                   {new Date(order.createdAt).toLocaleDateString()}
                 </td>
                 <td>{order.items.length}</td>
-                <td>${Number(order.totalPrice).toFixed(2)}</td>
+                <td>₹{Number(order.totalPrice).toFixed(2)}</td>
               </tr>
             ))}
           </tbody>

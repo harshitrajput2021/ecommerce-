@@ -43,7 +43,7 @@ export default function OrderConfirmationPage() {
             <tr key={idx}>
               <td>{item.productName}</td>
               <td>{item.quantity}</td>
-              <td>${Number(item.unitPrice).toFixed(2)}</td>
+              <td>₹{Number(item.unitPrice).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
@@ -51,7 +51,7 @@ export default function OrderConfirmationPage() {
       </div>
 
       <p style={{ textAlign: 'right', fontSize: '1.1rem' }}>
-        <strong>Total: ${Number(order.totalPrice).toFixed(2)}</strong>
+        <strong>Total: ₹{Number(order.totalPrice).toFixed(2)}</strong>
       </p>
 
       <button
